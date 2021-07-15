@@ -44,11 +44,11 @@ const goBack = ()=>{
 
   return (
     <article>
-      <p>{song.name}</p>
-      <p>{song.album}</p>
-      <p>{song.artist}</p>
-      <p>{song.time}</p>
-      <p>{song.is_favorite? "true":"false"}</p>
+      <p><b>Name:</b> {song.name}</p>
+      <p><b>Album:</b> {song.album}</p>
+      <p><b>Artist:</b> {song.artist}</p>
+      <p><b>Date:</b> {song.time}</p>
+      <p><b>Favorite:</b> {song.is_favorite? "true":"false"}</p>
       <button onClick={handleDelete}>Delete</button>
       <button onClick={goBack}>Back</button>
 

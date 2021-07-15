@@ -28,7 +28,7 @@ function SongsList() {
           <thead>
             <tr>
               <th></th>
-              <th>Take me there</th>
+              <th>Song Name</th>
               <th>See this Song</th>
             </tr>
           </thead>

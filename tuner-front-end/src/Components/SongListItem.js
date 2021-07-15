@@ -12,13 +12,13 @@ function SongListItem({ song }) {
         )}
       </td>
       <td>
-        <a target="_blank" rel="noreferrer">
+        <p>
           {song.name}
-        </a>
+        </p>
       </td>
       <td>
         <Link to={`/songs/${song.id}`}> 
-        <img className="songIcon" src="https://static.thenounproject.com/png/55431-200.png"></img>
+        <img className="songIcon" src="https://static.thenounproject.com/png/55431-200.png" alt="icon"></img>
         </Link>
       </td>
     </tr>
