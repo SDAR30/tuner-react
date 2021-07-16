@@ -33,8 +33,8 @@ function SongsList() {
               <th>Album</th>
               <th>Artist</th>
               <th>Date</th>
+              <th>Edit</th>
               <th>Take Me There</th>
-
 
             </tr>
           </thead>

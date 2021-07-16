@@ -5,6 +5,8 @@ import Home from './Pages/Home.js';
 import Index from './Pages/Index.js';
 import Show from './Pages/Show.js';
 import New from './Pages/New.js';
+import Edit from './Pages/Edit';
+import FourOFour from './Pages/FourOFour';
 
 
 function App() {
@@ -14,18 +16,30 @@ function App() {
        <NavBar />
        <main>
           <Switch>
+
             <Route exact path="/">
               <Home />
             </Route>
+
             <Route exact path="/songs">
               <Index />
             </Route>
+
             <Route exact path="/songs/new">
               <New/>
             </Route>
+            
             <Route exact path="/songs/:id">
               <Show />
             </Route>
+
+            <Route exact path="/songs/:id/edit" component={Edit}>
+            </Route>
+              
+            <Route path="*">
+              <FourOFour />
+            </Route>
+
           </Switch>
         </main>
      </Router>
